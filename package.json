@@ -1,0 +1,13 @@
+{
+  "name": "hospital-feedback-system",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "seed": "npm run seed:reset --prefix server",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm run build && NODE_ENV=production npm start --prefix server",
+    "test": "npm test --prefix server"
+  }
+}
